@@ -19,10 +19,11 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-//db.users = require('../models/user.js')(sequelize, Sequelize);
-//db.reimbForms = require('../models/reimbForm.js')(sequelize, Sequelize);
-
-//db.reimbForms.belongsTo(db.users);
-//db.users.hasMany(db.reimbForms);
+db.reimbReqForms = require('../models/reimbReqForm.js')(sequelize, Sequelize);
+db.addresses = require('../models/address.js')(sequelize, Sequelize);
+db.gradeFormats = require('../models/gradeFormat.js')(sequelize, Sequelize);
+db.eventTypes = require('../models/eventType.js')(sequelize, Sequelize);
+db.eventAttachments = require('../models/eventAttachment.js')(sequelize, Sequelize);
+db.approvalAttachments = require('../models/approvalAttachment.js')(sequelize, Sequelize);
 
 module.exports = db;
