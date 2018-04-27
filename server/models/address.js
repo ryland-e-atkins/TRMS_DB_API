@@ -35,6 +35,6 @@ module.exports = function (sequelize, Sequelize) {
         paranoid: true,
         freezeTableName: true
     });
-
+    
     return Addresses;
 };

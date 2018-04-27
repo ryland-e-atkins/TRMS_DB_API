@@ -13,16 +13,16 @@ module.exports = function (sequelize, Sequelize) {
         // be returned as a buffer.
         // src: http://docs.sequelizejs.com/manual/tutorial/models-definition.html#data-types
         ATTACHMENT: {
-            type: Sequelize.BLOB(medium),
-            allowNull: false
+            type: Sequelize.BLOB('medium'),
+            allowNull: true
         },
         APPROVAL_TYPE: {
             type: Sequelize.ENUM('FULL','PARTIAL'),
-            allowNull: false
+            allowNull: true
         },
         TIME_TO_BE_MISSED: {
             type: Sequelize.STRING,
-            allowNull: false
+            allowNull: true
         }
     }, 
     {
@@ -30,6 +30,6 @@ module.exports = function (sequelize, Sequelize) {
         paranoid: true,
         freezeTableName: true
     });
-
+    
     return ApprovalAttachments;
 };

@@ -13,8 +13,8 @@ module.exports = function (sequelize, Sequelize) {
         // be returned as a buffer.
         // src: http://docs.sequelizejs.com/manual/tutorial/models-definition.html#data-types
         ATTACHMENT: {
-            type: Sequelize.BLOB(medium),
-            allowNull: false
+            type: Sequelize.BLOB('medium'),
+            allowNull: true
         }
     }, 
     {
