@@ -1,0 +1,21 @@
+{
+  "name": "trms_db_rest_api",
+  "version": "1.0.0",
+  "description": "A web service used to access Tuition Reimbursement Management System database",
+  "main": "server.js",
+  "scripts": {
+    "test": "test_server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ryland-e-atkins/TRMS_DB_API.git"
+  },
+  "author": "Ryland Atkins",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mysql2": "^1.5.3",
+    "nodemon": "^1.17.3",
+    "sequelize": "^4.37.6"
+  }
+}
